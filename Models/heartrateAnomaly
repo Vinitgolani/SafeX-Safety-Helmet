@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import IsolationForest
+
+data = pd.read_csv('heart_rate_data.csv')
+
+# Prepare the data
+X = data[['heart_rate']]
+
+model = IsolationForest(contamination=0.1, random_state=42)
+model.fit(X)
+
+def detect_heart_rate_anomaly(heart_rate):
+    input_data = np.array([[heart_rate]])
+    prediction = model.predict(input_data)
+    return prediction[0] == -1  # -1 indicates an anomaly
