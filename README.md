@@ -42,7 +42,7 @@ Safe-X is a cutting-edge smart safety helmet designed to revolutionize rider saf
 ## 📞 Contact
 
 For any queries, reach out to us at:
-- Email: sercodeshark@gmail.com
+- Email: vinit.b.golani@gmail.com
 ---
 
 <p align="center">Made with ❤️ for rider safety</p>
